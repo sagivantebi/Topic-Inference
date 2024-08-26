@@ -1,9 +1,19 @@
 
 # Topic Inference through LLM Side Channels: Analyzing Model Response Times for Encrypted Traffic
 
+
+![side_channel0](https://github.com/user-attachments/assets/2b495c56-5881-42ec-80ae-3ed66d356b19)
+
+
+
 ## Overview
 
 This repository contains the implementation of our research project on side-channel attacks targeting Large Language Models (LLMs). The project demonstrates how an adversary can infer the topic of conversation between a user and an LLM by analyzing the response times and the number of tokens in the responses, even over encrypted channels. This attack poses significant privacy risks and underscores the need for enhanced security measures in LLM deployments.
+
+
+![side_cannek](https://github.com/user-attachments/assets/d550739a-7c96-4d1d-a593-9ca09bfba946)
+
+
 
 ## Abstract
 
@@ -24,6 +34,12 @@ The adversary's capabilities are defined as follows:
 - **A1**: The adversary can access the response time of the LLM.
 - **A2**: The adversary has access to both the response time and the number of tokens generated in the response.
 
+
+![side_cannel2](https://github.com/user-attachments/assets/21ac46cb-d918-4ea9-829a-efd6e00d7994)
+
+
+
+
 ### Predictive Models
 
 - **XGBoost**: A gradient boosting model trained on the processed data to predict conversation topics.
@@ -35,6 +51,11 @@ The adversary's capabilities are defined as follows:
   1. A1 can infer the topic using only response times.
   2. A2 can improve the accuracy of topic inference by incorporating token counts.
   3. Sub-topics within the main topic can be inferred by expanding the model's input features.
+ 
+
+![side_channel3](https://github.com/user-attachments/assets/603ad8c1-b398-4c6c-b5d9-d3b539d8dbb5)
+
+
 
 - **Evaluation**: The models were evaluated using Precision, Recall, F1-Score, Mean Squared Error (MSE), confusion matrices, and ROC curves.
 
@@ -43,6 +64,13 @@ The adversary's capabilities are defined as follows:
 - **A1 Results**: Low accuracy in topic inference with only response times, showing a trend of success in some topics.
 - **A2 Results**: High accuracy in topic inference when both response times and token counts are used, with significantly better performance on Falcon compared to LLaMa.
 - **A3 Results**: Attempted sub-topic inference showed weak results, indicating that further research is needed.
+
+
+
+![side_channel4](https://github.com/user-attachments/assets/fa3a4bba-b16c-4d70-a95b-e0e2efbfc24a)
+
+
+
 
 ## Conclusion
 
