@@ -1,5 +1,5 @@
 
-# Topic Inference through LLM Side Channels: Analyzing Model Response Times for Encrypted Traffic
+# Side Channel attack on LLMs:  LLMs Topic Inference over Encrypted Traffic by analyzing packets response times and size.
 
 
 ![side_channel0](https://github.com/user-attachments/assets/2b495c56-5881-42ec-80ae-3ed66d356b19)
